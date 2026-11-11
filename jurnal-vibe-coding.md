@@ -1,0 +1,1 @@
+# Jurnal Vibe Coding — Jobsheet 1   Nama: Ricko syahputra   NIM: 24554010023    Kelas: semester 5   | No | Tujuan | Prompt (ringkas) | Hasil AI | Keputusan | Alasan | |----|--------|------------------|----------|-----------|--------| | 1  | Beranda + formulir nama | Prompt Langkah 7 | ... | Terima/Ubah/Tolak | 
