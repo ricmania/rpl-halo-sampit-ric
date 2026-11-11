@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Halo Sampit</title>
+</head>
+
+<body>
+    <!-- Judul utama halaman -->
+    <h1>Halo Sampit!</h1>
+
+    <!-- Menampilkan salam waktu sebelum waktu server -->
+    <p>{{ salam }}</p>
+
+    <!-- Menampilkan waktu server saat ini -->
+    <p>Waktu server: <strong>{{ waktu }}</strong></p>
+
+    <!-- Formulir pengiriman nama menggunakan metode POST -->
+    <form method="POST">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Tuliskan nama Anda" required>
+        <button type="submit">Kirim</button>
+    </form>
+
+    <!-- Menampilkan sapaan jika nama telah dikirim (aman dari XSS via auto-escaping Jinja2) -->
+    {% if nama %}
+    <h2>Halo, {{ nama }}!</h2>
+    {% endif %}
+</body>
+
+</html>
